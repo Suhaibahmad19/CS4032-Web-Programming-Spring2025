@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="21L-1805_Q1_css.css" />
+
+    <title>Internship Application Form</title>
+  </head>
+  <body>
+    <section class="container">
+      <header>Internship Application Form</header>
+      <form class="form">
+        <div class="heading">
+          <h3>Personal Information</h3>
+        </div>
+        <div class="column">
+          <div class="user-input">
+            <label>First Name</label>
+            <input
+              type="text"
+              id="FName"
+              placeholder="Enter First Name"
+              required
+            />
+          </div>
+
+          <div class="user-input">
+            <label>Last Name</label>
+            <input
+              type="text"
+              id="LName"
+              placeholder="Enter Last Name"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="user-input">
+            <label>Email</label>
+            <input type="email" id="email" placeholder="Enter Email" required />
+          </div>
+          <div class="user-input">
+            <label>Phone</label>
+            <input
+              id="UserPhone"
+              type="number"
+              minlength="10"
+              placeholder="Enter Phone Number"
+              required
+            />
+          </div>
+        </div>
+        <div class="column">
+          <div class="user-input">
+            <label>DOB</label>
+            <input type="date" id="DOB" required />
+          </div>
+          <div class="gender-radio">
+            <h3>Gender</h3>
+            <div class="gender-option">
+              <div class="gender">
+                <input type="radio" id="check-male" name="gender" required />
+                <label for="check-male">Male</label>
+              </div>
+
+              <div class="gender">
+                <input type="radio" id="check-female" name="gender" required />
+                <label for="check-female">Female</label>
+              </div>
+
+              <div class="gender">
+                <input type="radio" id="check-other" name="gender" required />
+                <label for="check-other">Other</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="user-input address">
+          <label>Address</label>
+          <input
+            type="text"
+            id="Street"
+            placeholder="Street Address"
+            required
+          />
+          <div class="column">
+            <input type="text" id="city`" placeholder="City" required />
+            <input
+              type="text"
+              id="State"
+              placeholder="Province/State"
+              required
+            />
+          </div>
+          <div class="column">
+            <input type="text" id="Country" placeholder="Country" required />
+            <input type="number" id="ZIP" placeholder="ZIP" min="0" required />
+          </div>
+        </div>
+
+        <div class="heading">
+          <h3>Educational Background</h3>
+        </div>
+        <div class="column">
+          <div class="user-input">
+            <label>Highest Education</label>
+            <select name="education" id="Education" required>
+              <option hidden="">Choose Education</option>
+              <option value="Matric/O Level">Matric/O Level</option>
+              <option value="Inter/A Level">Inter/A Level</option>
+              <option value="Bachelor">Bachelor</option>
+              <option value="Master">Master</option>
+              <option value="PhD">PhD</option>
+              <option value="Diploma">Diploma</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="user-input">
+            <label>Institue</label>
+            <input
+              type="text"
+              id="Institue"
+              placeholder="Enter Institue Name"
+              required
+            />
+          </div>
+        </div>
+        <div class="column">
+          <div class="user-input">
+            <label>Major/Field of Study</label>
+            <input
+              type="text"
+              id="Major"
+              placeholder="Major/Field of Study"
+              required
+            />
+          </div>
+          <div class="user-input">
+            <label>Graduation Year</label>
+            <input
+              type="number"
+              id="gradyear"
+              min="1900"
+              max="2100"
+              placeholder=""
+              required
+            />
+          </div>
+        </div>
+        <div class="heading">
+          <h3>Internship Preferences</h3>
+        </div>
+        <div class="user-input">
+          <label>Desired Position</label>
+          <input
+            type="text"
+            id="DesiredPosition"
+            placeholder="eg. QA Analyst"
+            required
+          />
+        </div>
+        <div class="user-input">
+          <label>Internship Duration</label>
+          <select name="Duration" id="duration" required>
+            <option hidden="">Choose Duration</option>
+            <option id="6 Months" value="6 Months">6 Months</option>
+            <option id="3 Months" value="3 Months">3 Months</option>
+            <option id="Any" value="Any">Any</option>
+          </select>
+        </div>
+        <div class="column">
+          <div class="user-input">
+            <label>Possible Joining Date</label>
+            <input type="date" required />
+          </div>
+          <div class="user-input">
+            <label>Work Mode</label>
+            <select name="Duration" id="" required>
+              <option hidden value="">Choose Work Mode</option>
+              <option value="Remote">Remote</option>
+              <option value="On-Site">On-Site</option>
+              <option value="Hybrid">Hybrid</option>
+              <option value="Any">Any</option>
+            </select>
+          </div>
+        </div>
+        <div class="heading">
+          <h3>Work Experience</h3>
+        </div>
+        <div class="user-input">
+          <label>Job Title</label>
+          <input type="text" placeholder="Previous Internship / Job Titles" />
+        </div>
+        <div class="user-input">
+          <label>Company Name</label>
+          <input type="text" placeholder="Enter Company Name" />
+        </div>
+        <div class="column">
+          <div class="user-input">
+            <label>Start Date</label>
+            <input type="month" />
+          </div>
+          <div class="user-input">
+            <label>End Date</label>
+            <input type="month" />
+          </div>
+        </div>
+        <div class="user-input">
+          <label>Responsibilities and Skills Learned</label>
+          <textarea name="" id=""></textarea>
+        </div>
+        <div class="heading">
+          <h3>Additional Qualifications</h3>
+        </div>
+        <div class="user-input">
+          <label>Relevant Skills</label>
+          <textarea
+            placeholder="Eg. Programming Languages, Design Software etc."
+          ></textarea>
+        </div>
+        <div class="user-input">
+          <label>Certifications </label>
+          <textarea
+            placeholder="Online/Offline Courses Completed etc"
+          ></textarea>
+        </div>
+
+        <div class="heading">
+          <h3>Upload Documents</h3>
+        </div>
+        <div class="user-input">
+          <label>Upload Resume</label>
+          <input type="file" id="Resume-upload" required />
+          <label for="Resume-upload" class="custom-file-label">
+            <span>Choose File to Upload</span>
+          </label>
+        </div>
+
+        <div class="user-input">
+          <label>Cover Letter </label>
+          <textarea></textarea>
+        </div>
+        <div class="user-input">
+          <label>Upload Portfolio</label>
+          <div class="column">
+            <div>
+              <input type="file" id="portfolio-upload" />
+              <label for="portfolio-upload" class="custom-file-label">
+                <span>Choose File to Upload</span>
+              </label>
+            </div>
+            <span class="or">OR</span>
+            <div>
+              <input
+                type="url"
+                placeholder="Add Portfolio URL"
+                id="portfolio-upload"
+                required
+              />
+            </div>
+          </div>
+        </div>
+        <div class="heading">
+          <h3>References</h3>
+        </div>
+        <div class="user-input">
+          <label>Reference Name</label>
+          <input type="text" placeholder="Enter Reference Name" />
+        </div>
+        <div class="column">
+          <div class="user-input">
+            <label>Contact Number</label>
+            <input
+              type="number"
+              minlength="10"
+              placeholder="Enter Contact Number"
+            />
+          </div>
+          <div class="user-input">
+            <label>Email</label>
+            <input type="email" placeholder="Enter email" />
+          </div>
+        </div>
+        <div class="user-input">
+          <label>Relationship to Applicant</label>
+          <input type="text" placeholder="Enter Relationship to Applicant" />
+        </div>
+
+        <div class="heading">
+          <h3>Additional Questions</h3>
+        </div>
+        <div class="user-input">
+          <label for="q1">Why do you want to intern at this company?</label>
+          <textarea required id="q1"></textarea>
+        </div>
+        <div class="user-input">
+          <label for="q2"
+            >What are your career goals after completing the internship?</label
+          >
+          <textarea required id="q2"></textarea>
+        </div>
+        <div class="heading">
+          <h3>Consent and Agreement:</h3>
+        </div>
+        <div class="user-input">
+          <label class="custom-checkbox">
+            <input type="checkbox" id="terms-checkbox" required />
+            <span class="checkbox-box"></span>
+            I agree to the Terms & Conditions
+          </label>
+        </div>
+        <div class="user-input">
+          <label class="custom-checkbox">
+            <input type="checkbox" id="Privacy-checkbox" required />
+            <span class="checkbox-box"></span>
+            I agree to the Privacy Policy
+          </label>
+        </div>
+        <!--  -->
+        <button>Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
