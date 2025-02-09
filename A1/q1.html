@@ -10,30 +10,41 @@
   <body>
     <section class="container">
       <header>Internship Application Form</header>
-      <form action="-" class="form">
+      <form class="form">
         <div class="heading">
           <h3>Personal Information</h3>
         </div>
         <div class="column">
           <div class="user-input">
             <label>First Name</label>
-            <input type="text" placeholder="Enter First Name" required />
+            <input
+              type="text"
+              id="FName"
+              placeholder="Enter First Name"
+              required
+            />
           </div>
 
           <div class="user-input">
             <label>Last Name</label>
-            <input type="text" placeholder="Enter Last Name" required />
+            <input
+              type="text"
+              id="LName"
+              placeholder="Enter Last Name"
+              required
+            />
           </div>
         </div>
 
         <div class="column">
           <div class="user-input">
             <label>Email</label>
-            <input type="email" placeholder="Enter Email" required />
+            <input type="email" id="email" placeholder="Enter Email" required />
           </div>
           <div class="user-input">
             <label>Phone</label>
             <input
+              id="UserPhone"
               type="number"
               minlength="10"
               placeholder="Enter Phone Number"
@@ -44,7 +55,7 @@
         <div class="column">
           <div class="user-input">
             <label>DOB</label>
-            <input type="date" required />
+            <input type="date" id="DOB" required />
           </div>
           <div class="gender-radio">
             <h3>Gender</h3>
@@ -69,14 +80,24 @@
 
         <div class="user-input address">
           <label>Address</label>
-          <input type="text" placeholder="Street Address" required />
+          <input
+            type="text"
+            id="Street"
+            placeholder="Street Address"
+            required
+          />
           <div class="column">
-            <input type="text" placeholder="City" required />
-            <input type="text" placeholder="Province/State" required />
+            <input type="text" id="city`" placeholder="City" required />
+            <input
+              type="text"
+              id="State"
+              placeholder="Province/State"
+              required
+            />
           </div>
           <div class="column">
-            <input type="text" placeholder="Country" required />
-            <input type="number" placeholder="ZIP" min="0" required />
+            <input type="text" id="Country" placeholder="Country" required />
+            <input type="number" id="ZIP" placeholder="ZIP" min="0" required />
           </div>
         </div>
 
@@ -86,7 +107,7 @@
         <div class="column">
           <div class="user-input">
             <label>Highest Education</label>
-            <select name="education" id="" required>
+            <select name="education" id="Education" required>
               <option hidden="">Choose Education</option>
               <option value="Matric/O Level">Matric/O Level</option>
               <option value="Inter/A Level">Inter/A Level</option>
@@ -99,13 +120,23 @@
           </div>
           <div class="user-input">
             <label>Institue</label>
-            <input type="text" placeholder="Enter Institue Name" required />
+            <input
+              type="text"
+              id="Institue"
+              placeholder="Enter Institue Name"
+              required
+            />
           </div>
         </div>
         <div class="column">
           <div class="user-input">
             <label>Major/Field of Study</label>
-            <input type="text" placeholder="Major/Field of Study" required />
+            <input
+              type="text"
+              id="Major"
+              placeholder="Major/Field of Study"
+              required
+            />
           </div>
           <div class="user-input">
             <label>Graduation Year</label>
@@ -124,15 +155,20 @@
         </div>
         <div class="user-input">
           <label>Desired Position</label>
-          <input type="text" placeholder="eg. QA Analyst" required />
+          <input
+            type="text"
+            id="DesiredPosition"
+            placeholder="eg. QA Analyst"
+            required
+          />
         </div>
         <div class="user-input">
           <label>Internship Duration</label>
-          <select name="Duration" id="" required>
+          <select name="Duration" id="duration" required>
             <option hidden="">Choose Duration</option>
-            <option value="3 Months">3 Months</option>
-            <option value="6 Months">6 Months</option>
-            <option value="Any">Any</option>
+            <option id="6 Months" value="6 Months">6 Months</option>
+            <option id="3 Months" value="3 Months">3 Months</option>
+            <option id="Any" value="Any">Any</option>
           </select>
         </div>
         <div class="column">
@@ -199,7 +235,7 @@
           <label>Upload Resume</label>
           <input type="file" id="Resume-upload" required />
           <label for="Resume-upload" class="custom-file-label">
-            <span>Upload File to Upload</span>
+            <span>Choose File to Upload</span>
           </label>
         </div>
 
@@ -213,10 +249,10 @@
             <div>
               <input type="file" id="portfolio-upload" />
               <label for="portfolio-upload" class="custom-file-label">
-                <span>Upload File to Upload</span>
+                <span>Choose File to Upload</span>
               </label>
             </div>
-
+            <span class="or">OR</span>
             <div>
               <input
                 type="url"
